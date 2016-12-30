@@ -1,0 +1,41 @@
+<html>
+<body bgcolor="#E7EEBA">
+<h2><font face="Lucida Sans Unicode"><a href="/lout/" style="float: right;">Logout</a></font></h2>
+<font color="Black" face="Lucida Sans Unicode">
+  {% load static %}
+   <form name = "form" method = "POST" action="/link1/">
+ {% csrf_token %}
+ <h2><marquee scrollamount="15"><font color="Blue" size="25">Car Rental</font></marquee></h2>
+ <div>
+ <br> <br> <br>
+ <center>
+ <table class="center" border="1" width="25%" height="30%" bgcolor="#6499E7">
+ <tr>
+ <th><h2>Name</h2></th>
+   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="loc_id" required=" " pattern="[A-Za-z]{1,10}"></td>
+ </tr>
+ <tr>
+    <th><h2>From</h2></th>
+   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="from_id" required=" " pattern="[A-Za-z]{1,10}"  ></td>
+    </tr>
+    <tr>
+    <th><h2>To</h2></th>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="to_id" required=" " pattern="[A-Za-z]{1,10}"></td>
+    </tr>
+ <tr>
+ <td colspan="2" align="center"> &nbsp; &nbsp;  &nbsp;
+ <input type="submit" value="Book a Car" name="submit">
+ </td>
+ </tr>
+ </table>
+ </center>
+ </div>
+ </form>
+ <form method="post" action="/su/">
+  {% csrf_token %}
+<center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="View Bookings" name="submit" ></center>
+ </form><center>
+    <h2>&nbsp;&nbsp;&nbsp;<a href="/regist/">To View Register Users</a></h2></center>
+ </font>
+ </body>
+ </html>

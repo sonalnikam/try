@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Booking Info</title>
+</head>
+<body bgcolor="#E7EEBA">
+ {% load static %}
+ 
+ <h2><a href="/lout/" style="float: right;">logout</a></h2>
+<center>
+<br>
+<h1><font face="Lucida Sans Unicode">BOOKINGS</font></h1>
+<br><br>
+<font face="Lucida Sans Unicode">
+<table border="1" width="30%" bgcolor="#DAF7A6">
+<tr>
+<th><h1><b>Name</b></h1></th>
+<th><h1><b>UserName </b></h1></th>
+
+</tr>
+<tr>
+{% for post in post1 %}
+
+<td><h4>{{ post.Name }}</h4></td>
+<td><h4>{{ post.Username }}</h4></td>
+
+
+</tr>
+    {% endfor %} 
+
+
+
+<h2><a href="/bookinfo/">Click here for Booking!!!</a></h2>
+</table>
+
+</font>
+</center> 
+</body>
+</html>
